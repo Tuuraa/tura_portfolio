@@ -1,9 +1,7 @@
 import './about.css'
 import Skill from '../../skill/skill';
-import { useEffect, useState } from 'react';
 
 function About() {
-    const [data, setData] = useState(null);
     const skillsData = [
         {
             "img_source": "https://aakashrajbanshi.com.np/assets/images/icon-app.svg",
@@ -22,21 +20,6 @@ function About() {
         }
     ]
 
-    useEffect(() => {
-        fetch('/info.json')
-        .then(response => response.json())
-        .then(data => {
-            console.log('Данные успешно получены:', data);
-            setData(data);
-        })
-        .catch(error => {
-            console.error('Ошибка при загрузке данных:', error);
-        });
-    }, []);
-
-    if (!data) {
-        return <p>Загрузка...</p>;
-    }
 
     return (
         <div className='about'>
