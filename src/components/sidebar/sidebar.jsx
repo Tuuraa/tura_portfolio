@@ -22,8 +22,8 @@ const Sidebar = () => {
 
             <ul className='sidebar_links'>
                 <Link name='EMAIL' value='turapro3443@mail.ru' icon='E'/>
-                <Link name='PHONE' value='+7 999 999 99 99' icon='P'/>
-                <Link name='ADDRESS' value='Russia, Moscow' icon='A'/>
+                <Link name='PHONE' value='+7 996 948 43 79' icon='P'/>
+                <Link name='ADDRESS' value='Russia, Krasnodar' icon='A'/>
 
             </ul>
         </div>
