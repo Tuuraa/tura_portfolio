@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.about_info {
+    width: 100%;
+}
+
+.about_info p {
+    color: #b3b3b4;
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.about_skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about_skills h2 {
+    color: #fff;
+}
+
+.about_skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media(max-width: 1390px) {
+    .about_skills_list {
+        display: flex;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,42 @@
+.menu {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border: 1px solid #3a3a3b;
+    
+    border-top-right-radius: 20px;
+    border-end-start-radius: 20px;
+    background-color: #282829;
+}
+
+.menu_line {
+    color: #fff;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.is_active_menu {
+    color: #fcd96f;
+}
+
+@media(max-width: 1200px) {
+    .menu {
+        position: fixed;
+        bottom: -10px;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 40px;
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .menu_line {
+        font-size: 15px;
+    }
+}

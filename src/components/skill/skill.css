@@ -1,0 +1,37 @@
+.skill {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    background-color: #222224;
+    border: 1px solid #3a3a3b;
+    border-radius: 15px;
+    width: 45%;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+}
+
+.skill img {
+    height: 35px;
+    width: 35px;
+}
+
+.skill_info h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.skill_info p {
+    color: #fff;
+    font-size: 14px;
+}
+
+@media(max-width: 1580px) {
+    .skill {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
