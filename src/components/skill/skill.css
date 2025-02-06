@@ -7,14 +7,13 @@
     border: 1px solid #3a3a3b;
     border-radius: 15px;
     width: 45%;
-    padding: 30px;
+    padding: 18px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 
 }
 
-.skill img {
-    height: 35px;
-    width: 35px;
+.skill_img img {
+    padding-top: 25px;
 }
 
 .skill_info h3 {
@@ -30,8 +29,19 @@
 @media(max-width: 1580px) {
     .skill {
         display: flex;
-        flex-direction: column;
+        gap: 12px;
         width: 100%;
+        padding: 15px;
+    }
+
+    .skill_img {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill_img img {
+        padding-top: 0;
     }
 }
 

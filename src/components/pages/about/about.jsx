@@ -6,17 +6,17 @@ function About() {
         {
             "img_source": "https://aakashrajbanshi.com.np/assets/images/icon-app.svg",
             "title": "Flutter",
-            "desc": "I'm a Flutter developer"
+            "desc": "I develop flutter applications at an intermediate level, from scratch."
         },
         {
             "img_source": "https://aakashrajbanshi.com.np/assets/images/icon-dev.svg",
             "title": "Web development",
-            "desc": "High-quality development of sites at the professional level"
+            "desc": "I have experience developing websites on the React framework."
         },
         {
             "img_source": "https://aakashrajbanshi.com.np/assets/images/icon-design.svg",
             "title": "UI/UX Design",
-            "desc": "The most modern and high-quality design made at a professional level."
+            "desc": "I like to develop beautiful web interfaces for websites in Figma."
         }
     ]
 

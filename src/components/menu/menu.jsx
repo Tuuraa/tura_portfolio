@@ -5,7 +5,7 @@ import classNames from 'classnames'
 const Menu = ({ setMenuItem}) => {
 
     const [isActiveIndex, setIsActiveIndex] = useState(0);
-    const menuItems = ['About', 'Resume', 'Contact', "Portfolio"];
+    const menuItems = ['About', 'Resume', 'Contact'];
 
     const handleClick = (index) => {
         setIsActiveIndex(index);

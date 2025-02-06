@@ -1,44 +1,26 @@
+import Tag from '../../tag/tag'
 import './resume.css'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
 
 const Resume = () => {
+    const tags = [
+        "JavaScript", "SQL", "MySQL", "C#", "OOP", ".NET Core", "CSS", "Django Rest Framework", "HTML5",
+        "CSS3", "Algorithmization", "Frameworks", "Data Structures", "Software Development", "Databases",
+        "Git", "Python", "SOLID", "MVVM", "MVC", "REST API",  "Next.js", "React", "Entity Framework",
+        "Linux", "Code Refactoring", "Testing"
+    ];
+
     return (
         <div className='resume'>
-            <p>Here will be reflected my entire path in the field of information technology: from the first steps and mastering basic skills to achieving significant results, participating in complex projects and constant development in this dynamic and rapidly changing industry</p>
-            <Timeline position="alternate">
-                <TimelineItem>
-                    <TimelineSeparator>
-                    <TimelineDot variant="outlined" />
-                    <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent color='#fff'>Eat</TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                    <TimelineDot variant="outlined" color="primary" />
-                    <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent color='#fff'>Code</TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                    <TimelineDot variant="outlined" color="secondary" />
-                    <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent color='#fff'>Sleep</TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                    <TimelineDot variant="outlined" />
-                    </TimelineSeparator>
-                    <TimelineContent color='#fff'>Repeat</TimelineContent>
-                </TimelineItem>
-            </Timeline>
+            <p className='resume-text'>Here will be reflected my entire path in the field of information technology: from the first steps and mastering basic skills to achieving significant results, participating in complex projects and constant development in this dynamic and rapidly changing industry</p>
+            <h2>Tags:</h2>
+
+            <div className='tags'>
+                {tags.map((tag, index) => <Tag key={index} title={tag}/>)}
+            </div>
+            
+            <div className='resume-download'>
+                <a href="./files/Resume.pdf">Download Resume</a>
+            </div>
         </div>
     )
 }
