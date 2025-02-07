@@ -3,6 +3,7 @@ import Menu from '../menu/menu'
 import './content.css'
 import About from '../pages/about/about';
 import Resume from '../pages/resume/resume';
+import Contact from '../pages/contact/contact';
 
 
 const Content = () => {
@@ -11,6 +12,7 @@ const Content = () => {
     const selectionPage = {
         "About": <About/>,
         "Resume": <Resume/>,
+        "Contact": <Contact/>
     }
 
     return (

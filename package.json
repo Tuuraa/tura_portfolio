@@ -8,12 +8,16 @@
     "@mui/lab": "^6.0.0-beta.25",
     "@mui/material": "^6.4.2",
     "@mui/styled-engine-sc": "^6.4.2",
+    "autoprefixer": "^10.4.20",
     "classnames": "^2.5.1",
     "cra-template": "1.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "postcss": "^8.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "styled-components": "^6.1.14"
+    "react-yandex-maps": "^4.6.0",
+    "styled-components": "^6.1.14",
+    "tailwindcss": "^4.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
