@@ -13,6 +13,14 @@ const ContactForm = () => {
     console.log("Отправка данных:", formData);
   };
 
+  const sendMessage = () => {
+    if (formData.name && formData.email && formData.message) {
+      alert("Message sent successfully!");
+    } else {
+      alert("Please fill out all fields!");
+    }
+  };
+
   return (
     <div className="contact-form-main">
       <h2 className="contact-form-title">Contact Form</h2>
@@ -46,7 +54,7 @@ const ContactForm = () => {
         <button
           type="submit"
           className="contact-form-button"
-          onClick={() => alert("Message sent successfully!")}
+          onClick={sendMessage}
         >
           Send Message
         </button>

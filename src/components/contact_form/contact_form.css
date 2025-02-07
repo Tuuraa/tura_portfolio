@@ -25,6 +25,7 @@
     border: 1px solid #3a3a3b;
     border-radius: 12px;
     width: 250px;
+    color: #fff;
 }
 
 .contact-form-textarea {
@@ -33,11 +34,12 @@
     border: 1px solid #3a3a3b;
     border-radius: 12px;
     height: 120px;
+    color: #fff;
 }
 
 .contact-form-button {
     border: none;
-    
+
     color: #b8a056;
     background-color: #202022;
     padding: 20px;
